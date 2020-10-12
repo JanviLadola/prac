@@ -11,12 +11,21 @@ module.exports = async(req, res) => {
     let getUser = await user.findOne({ Email })
 
     console.log(getUser, "1.1");
+<<<<<<< HEAD
     // if (getUser != null) {
     //     return res.status(409).json({
     //         "data": getUser,
     //         "message": "already"
     //     });
     // }
+=======
+    if (getUser != null) {
+        return res.status(409).json({
+            "data": getUser,
+            "message": "already"
+        });
+    }
+>>>>>>> master
     console.log(Email);
     console.log(Password);
     await new user({
