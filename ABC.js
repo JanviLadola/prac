@@ -17,12 +17,7 @@ module.exports = async(req, res) => {
     //         "message": "already"
     //     });
     // }
-    // if (getUser != null) {
-    //     return res.status(409).json({
-    //         "data": getUser,
-    //         "message": "already"
-    //     });
-    // }
+
     console.log(Email);
     console.log(Password);
     await new user({
